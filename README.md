@@ -22,8 +22,7 @@ MemoryMatch: The Card Matching Game is a simple web-based memory card game creat
 
 ## Demo
 
-You can play the game live at [Demo Link](https://leni-nikitaa.github.io/Responsive-Social-Flip-Card-Memory-Game-with-Shake-Effects/).
-
+You can play the game live at [Demo Link](https://leni-nikitaa.github.io/MemoryMatch-The-Card-Matching-Game/)
 ## Getting Started
 
 1. Clone this repository to your local machine.
@@ -56,4 +55,4 @@ You can customize the game by replacing the card images and sounds in the projec
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Leni-Nikitaa/Responsive-Social-Flip-Card-Memory-Game-with-Shake-Effects/blob/main/LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Leni-Nikitaa/MemoryMatch-The-Card-Matching-Game/blob/main/LICENSE.md) file for details.
