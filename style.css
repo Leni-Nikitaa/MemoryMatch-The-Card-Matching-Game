@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,300&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Ubuntu',sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 p{
     font-size: 20px;
 }
-body{
+body {
+    background: #f5f5f5;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    background: #673ab7;
-}
+  }
 .wrapper{
     padding: 25px;
     background: #f8f8f8;
@@ -32,6 +32,22 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.card {
+    cursor: pointer;
+    position: relative;
+    perspective: 1000px;
+    height: 100px;
+    width: 100px;
+  }
+.card .view {
+    background: #fff;
+    border-radius: 7px;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.25s linear;
+    user-select: none;
+    pointer-events: none;
+  }
 .cards .card{
     cursor: pointer;
     position: relative;
@@ -72,21 +88,23 @@ body{
     transition: tranform 0.25s linear;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
-.card .front-view i{
-    font-size: 40px;
+.card .front-view img {
+    max-width: 100%;
+    max-height: 100%;
 }
-.card .back-view i{
-    font-size: 40px;
+.card .back-view img {
+    max-width: 100%;
+    max-height: 100%;
 }
-.card .back-view{
+.card .back-view {
     transform: rotateY(-180deg);
 }
-.card.filp .front-view{
+.card.flip .front-view {
     transform: rotateY(180deg);
-}
-.card.flip .back-view{
+  }
+.card.flip .back-view {
     transform: rotateY(0);
-}
+  }
 .details{
     width: 100%;
     margin-top: 15px;
@@ -133,12 +151,14 @@ body{
         height: 350px;
         width: 350px;
     }
-    .card .front-view i{
-        font-size: 35px;
-    }
-    .card .back-view i{
-        font-size: 35px;
-    }
+    .card .front-view i {
+        font-size: 40px;
+        color: #673AB7;
+      }
+      .card .back-view i {
+        font-size: 40px;
+        color: #673AB7;
+      }
 }
 @media screen and (max-width: 530px) {
     .cards{
@@ -148,16 +168,39 @@ body{
     .card .back-view i{
         font-size: 30px;
     }
-    .details{
-        margin-top: 10px;
-        padding: 0 15px;
-        height: calc(100% / 4 - 20%);
-    }
-    .details p{
-        height: 15px;
-        font-size: 17px;
-        padding-right: 13px;
-    }
+    .details {
+        background: #fff;
+        border-radius: 7px;
+        margin-top: 15px;
+        padding: 10px;
+        text-align: center;
+      }
+    .details p {
+        font-size: 18px;
+        display: inline;
+        padding-right: 18px;
+        border-right: 1px solid #ccc;
+      }
+    .details p span {
+        margin-left: 8px;
+      }
+    .details p b {
+        font-weight: 500;
+      }
+    details button {
+        background: #673AB7;
+        border: 2px solid #673AB7;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 4px 11px;
+        transition: 0.3s ease;
+      }
+    details button:hover {
+        background: #fff;
+        color: #673AB7;
+      }
     .details button{
         font-size: 13px;
         padding: 5px IOpx;

@@ -4,113 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memor Flip Card Game</title>
 </head>
 <body>
+    <audio id="flipSound" src="flip.wav"></audio>
+    <audio id="matchSound" src="match.wav"></audio>
+    <audio id="wrongSound" src="wrong.wav"></audio>
     <div class="wrapper">
+        <div class="difficulty">
+            <label for="difficulty-select">Select Difficulty:</label>
+            <select id="difficulty-select">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
         <ul class="cards">
             <li class="card">
                 <div class="view front-view">
-                    <i class='bx bx-question-mark'></i>
+                    <img src="card1.jpg" alt="Card 1">
                 </div>
                 <div class="view back-view">
-                    <i class='bx bxl-tiktok'></i>
+                    <img src="card2.jpg" alt="Card 2">
                 </div>
             </li>
             <li class="card">
                 <div class="view front-view">
-                    <i class='bx bx-question-mark'></i>
+                    <img src="card1.jpg" alt="Card 1">
                 </div>
                 <div class="view back-view">
-                    <i class='bx bxl-instagram-alt' ></i>
+                    <img src="card3.jpg" alt="Card 3">
                 </div>
             </li><li class="card">
                 <div class="view front-view">
-                    <i class='bx bx-question-mark'></i>
+                    <img src="card1.jpg" alt="Card 1">
                 </div>
                 <div class="view back-view">
-                    <i class='bx bxl-facebook-circle' ></i>
+                    <img src="card4.jpg" alt="Card 4">
                 </div>
             </li>
             <li class="card">
                 <div class="view front-view">
-                    <i class='bx bx-question-mark'></i>
+                    <img src="card1.jpg" alt="Card 1">
                 </div>
                 <div class="view back-view">
-                    <i class='bx bxl-twitter' ></i>
+                    <img src="card5.jpg" alt="Card 5">
                 </div>
             </li>
             <li class="card">
                 <div class="view front-view">
-                    <i class='bx bx-question-mark'></i>
+                    <img src="card1.jpg" alt="Card 1">
                 </div>
                 <div class="view back-view">
-                    <i class='bx bxl-whatsapp'></i>
+                    <img src="card6.jpg" alt="Card 6">
                 </div>
             </li>
             <li class="card">
                 <div class="view front-view">
-                    <i class='bx bx-question-mark'></i>
+                    <img src="card1.jpg" alt="Card 1">
                 </div>
                 <div class="view back-view">
-                    <i class='bx bxl-youtube' ></i>
+                    <img src="card7.jpg" alt="Card 7">
                 </div>
             </li>
             <li class="card">
                 <div class="view front-view">
-                    <i class='bx bx-question-mark'></i>
+                    <img src="card1.jpg" alt="Card 1">
                 </div>
                 <div class="view back-view">
-                    <i class='bx bxl-tiktok'></i>
+                    <img src="card2.jpg" alt="Card 2">
                 </div>
             </li>
             <li class="card">
                 <div class="view front-view">
-                    <i class='bx bx-question-mark'></i>
+                    <img src="card1.jpg" alt="Card 1">
                 </div>
                 <div class="view back-view">
-                    <i class='bx bxl-instagram-alt' ></i>
+                    <img src="card3.jpg" alt="Card 3">
                 </div>
             </li><li class="card">
                 <div class="view front-view">
-                    <i class='bx bx-question-mark'></i>
+                    <img src="card1.jpg" alt="Card 1">
                 </div>
                 <div class="view back-view">
-                    <i class='bx bxl-facebook-circle' ></i>
+                    <img src="card4.jpg" alt="Card 4">
                 </div>
             </li>
             <li class="card">
                 <div class="view front-view">
-                    <i class='bx bx-question-mark'></i>
+                    <img src="card1.jpg" alt="Card 1">
                 </div>
                 <div class="view back-view">
-                    <i class='bx bxl-twitter' ></i>
+                    <img src="card5.jpg" alt="Card 5">
                 </div>
             </li>
             <li class="card">
                 <div class="view front-view">
-                    <i class='bx bx-question-mark'></i>
+                    <img src="card1.jpg" alt="Card 1">
                 </div>
                 <div class="view back-view">
-                    <i class='bx bxl-whatsapp'></i>
+                    <img src="card6.jpg" alt="Card 6">
                 </div>
             </li>
             <li class="card">
                 <div class="view front-view">
-                    <i class='bx bx-question-mark'></i>
+                    <img src="card1.jpg" alt="Card 1">
                 </div>
                 <div class="view back-view">
-                    <i class='bx bxl-youtube' ></i>
+                    <img src="card7.jpg" alt="Card 7">
                 </div>
             </li>
-            <div class="details">
-                <p class="time">Time : <span><b>0</b>s</span></p>
-                <p class="flips">Flips : <span><b>0</b></span></p>
-                <button>Refresh</button>
-            </div>
         </ul>
+        <div class="details">
+            <p class="time">Time: <b>0</b>s</p>
+            <p class="flips">Flips: <b>0</b></p>
+            <button>Refresh</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
